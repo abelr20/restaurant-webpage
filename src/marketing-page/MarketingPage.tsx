@@ -22,10 +22,7 @@ interface ToggleCustomThemeProps {
   toggleCustomTheme: () => void;
 }
 
-function ToggleCustomTheme({
-  showCustomTheme,
-  toggleCustomTheme,
-}: ToggleCustomThemeProps) {
+function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }: ToggleCustomThemeProps) {
   return (
     <Box
       sx={{
@@ -35,29 +32,27 @@ function ToggleCustomTheme({
         width: '100dvw',
         position: 'fixed',
         bottom: 24,
-      }}
-    >
-      <ToggleButtonGroup
-        color="primary"
+      }}>
+      {/* <ToggleButtonGroup
+        color='primary'
         exclusive
         value={showCustomTheme}
         onChange={toggleCustomTheme}
-        aria-label="Toggle design language"
+        aria-label='Toggle design language'
         sx={{
           backgroundColor: 'background.default',
           '& .Mui-selected': {
             pointerEvents: 'none',
           },
-        }}
-      >
+        }}>
         <ToggleButton value>
           <AutoAwesomeRoundedIcon sx={{ fontSize: '20px', mr: 1 }} />
           Custom theme
         </ToggleButton>
-        <ToggleButton data-screenshot="toggle-default-theme" value={false}>
+        <ToggleButton data-screenshot='toggle-default-theme' value={false}>
           Material Design 2
         </ToggleButton>
-      </ToggleButtonGroup>
+      </ToggleButtonGroup> */}
     </Box>
   );
 }
@@ -69,11 +64,11 @@ export default function MarketingPage() {
   const defaultTheme = createTheme({ palette: { mode } });
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   const toggleCustomTheme = () => {
-    setShowCustomTheme((prev) => !prev);
+    setShowCustomTheme(prev => !prev);
   };
 
   return (
@@ -95,10 +90,7 @@ export default function MarketingPage() {
         <Divider />
         <Footer />
       </Box>
-      <ToggleCustomTheme
-        showCustomTheme={showCustomTheme}
-        toggleCustomTheme={toggleCustomTheme}
-      />
+      <ToggleCustomTheme showCustomTheme={showCustomTheme} toggleCustomTheme={toggleCustomTheme} />
     </ThemeProvider>
   );
 }

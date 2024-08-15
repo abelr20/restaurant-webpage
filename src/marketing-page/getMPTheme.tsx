@@ -467,10 +467,7 @@ export default function getMPTheme(mode: PaletteMode): ThemeOptions {
                   ...theme.applyStyles('dark', {
                     border: `1px solid ${alpha(gray[700], 0.4)}`,
                     boxShadow: 'none',
-                    background: `linear-gradient(to bottom, ${gray[900]}, ${alpha(
-                      gray[800],
-                      0.5,
-                    )})`,
+                    background: `linear-gradient(to bottom, ${gray[900]}, ${alpha(gray[800], 0.5)})`,
                   }),
                 },
               },
