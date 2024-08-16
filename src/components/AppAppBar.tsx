@@ -55,7 +55,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             alignItems: 'center',
             justifyContent: 'space-between',
             flexShrink: 0,
-            borderRadius: '10px',
+            borderRadius: '999px',
             backdropFilter: 'blur(24px)',
             maxHeight: 40,
             border: '1px solid',

@@ -40,6 +40,7 @@ export default function Hero() {
       sx={theme => ({
         width: '100%',
         height: '300px',
+        paddingBottom: '10px',
         backgroundRepeat: 'no-repeat',
         backgroundImage: 'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
         ...theme.applyStyles('dark', {
@@ -61,6 +62,8 @@ export default function Hero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
+              justifyContent: 'center', // Centering on mobile
+              textAlign: 'center', // Centering text on mobile
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}>
             Thai Love NY Restaurant
