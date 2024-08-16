@@ -11,8 +11,8 @@ import Grid from '@mui/material/Grid2';
 const items = [
   {
     title: 'S1. Rice',
-    description: 'Jasmine rice.',
-    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/rice.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    description: 'Steamed jasmine rice.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/Side%20steam%20rice.jpg/:/cr=t:11.32%25,l:24.65%25,w:39.61%25,h:70.42%25/rs=w:720,h:720,cg=true,m',
     price: '$3.00',
   },
   {
@@ -35,7 +35,7 @@ const items = [
   },
   {
     title: 'S5. Sticky Rice',
-    description: 'Sticky rice.',
+    description: 'Steamed sticky rice.',
     image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/sticky%20rice.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
     price: '$3.00',
   },
@@ -70,19 +70,36 @@ export default function Sides() {
             textAlign: 'center',
           }}>
           <Typography component='h2' variant='h4'>
-            Soups
-          </Typography>
-          <Typography component='h2' variant='body1'>
-            Choice of Protein: [ Veggie, Tofu, Chicken, Beef, Pork, Shrimp +$1 ]
+            Sides
           </Typography>
         </Box>
         <Grid container spacing={2.5} justifyContent='center' columns={{ xs: 4, sm: 8, md: 12 }}>
           {items.map((item, index) => (
             <Grid size={4} key={index} display='flex' justifyContent='center'>
-              <Card sx={{ maxWidth: 400, border: '1px solid hsla(220, 25%, 25%, .3)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} onClick={onlineOrder}>
-                <CardActionArea sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <Card
+                sx={{
+                  flexGrow: 1, // Allow the card to grow and match the width of others in the grid
+                  border: '1px solid hsla(220, 25%, 25%, .3)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                }}
+                onClick={onlineOrder}>
+                <CardActionArea
+                  sx={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start', // Align items to the left
+                    justifyContent: 'left',
+                  }}>
                   <CardMedia component='img' height='220' image={item.image} alt={item.title} />
-                  <CardContent sx={{ flexGrow: 1 }}>
+                  <CardContent
+                    sx={{
+                      flexGrow: 1,
+                      width: '100%', // Ensure the content takes up full width
+                      textAlign: 'left', // Align text to the left
+                    }}>
                     <Typography gutterBottom variant='h5' component='div'>
                       {item.title}
                     </Typography>
