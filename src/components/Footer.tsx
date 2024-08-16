@@ -169,13 +169,13 @@ export default function Footer() {
           <Copyright />
         </div>
         <Stack direction='row' spacing={1} useFlexGap sx={{ justifyContent: 'left', color: 'text.secondary' }}>
-          <IconButton color='inherit' href='https://github.com/mui' aria-label='GitHub' sx={{ alignSelf: 'center' }}>
+          <IconButton color='inherit' href='https://github.com/abelr20' aria-label='GitHub' sx={{ alignSelf: 'center' }}>
             <FacebookIcon />
           </IconButton>
           <IconButton color='inherit' href='https://x.com/MaterialUI' aria-label='X' sx={{ alignSelf: 'center' }}>
             <TwitterIcon />
           </IconButton>
-          <IconButton color='inherit' href='https://www.linkedin.com/company/mui/' aria-label='LinkedIn' sx={{ alignSelf: 'center' }}>
+          <IconButton color='inherit' href='https://www.linkedin.com/in/abel-ratanaphan/' aria-label='LinkedIn' sx={{ alignSelf: 'center' }}>
             <LinkedInIcon />
           </IconButton>
         </Stack>

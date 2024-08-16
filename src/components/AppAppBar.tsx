@@ -41,6 +41,10 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
     }
   };
 
+  const onlineOrder = () => {
+    document.location.href = 'https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=e034bbd0-d0f6-4d94-ba06-6eabcfa70f6d';
+  };
+
   return (
     <AppBar position='fixed' sx={{ boxShadow: 0, bgcolor: 'transparent', backgroundImage: 'none', mt: 2 }}>
       <Container maxWidth='lg'>
@@ -51,7 +55,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             alignItems: 'center',
             justifyContent: 'space-between',
             flexShrink: 0,
-            borderRadius: '999px',
+            borderRadius: '10px',
             backdropFilter: 'blur(24px)',
             maxHeight: 40,
             border: '1px solid',
@@ -66,19 +70,19 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Logo />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant='text' color='info' size='small' onClick={() => scrollToSection('features')}>
-                Features
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('menu')}>
+                Menu
               </Button>
-              <Button variant='text' color='info' size='small' onClick={() => scrollToSection('testimonials')}>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('testimonials')}>
                 Testimonials
               </Button>
-              <Button variant='text' color='info' size='small' onClick={() => scrollToSection('highlights')}>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('highlights')}>
                 Highlights
               </Button>
-              <Button variant='text' color='info' size='small' onClick={() => scrollToSection('pricing')}>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('pricing')}>
                 Pricing
               </Button>
-              <Button variant='text' color='info' size='small' onClick={() => scrollToSection('faq')} sx={{ minWidth: 0 }}>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('faq')} sx={{ minWidth: 0 }}>
                 FAQ
               </Button>
             </Box>
@@ -90,10 +94,10 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               alignItems: 'center',
             }}>
             <ToggleColorMode data-screenshot='toggle-mode' mode={mode} toggleColorMode={toggleColorMode} />
-            {/* <Button color='primary' variant='text' size='small'>
-              Sign in
+            <Button color='primary' variant='text' size='large' onClick={onlineOrder}>
+              Order
             </Button>
-            <Button color='primary' variant='contained' size='small'>
+            {/* <Button color='primary' variant='contained' size='small'>
               Sign up
             </Button> */}
           </Box>

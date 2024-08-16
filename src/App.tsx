@@ -16,7 +16,8 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getMPTheme from './getMPTheme';
-import ImageList from './components/ImageList';
+import Menu from './components/Appetizers';
+import OurMenu from './components/OurMenu';
 // import { ImageList } from '@mui/material';
 
 interface ToggleCustomThemeProps {
@@ -79,9 +80,10 @@ export default function MarketingPage() {
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <Hero />
       <Box sx={{ bgcolor: 'background.default' }}>
-        <LogoCollection />
+        {/* <LogoCollection /> */}
         {/* <Features /> */}
-        <ImageList />
+        <OurMenu />
+        <Menu />
         <Divider />
         <Testimonials />
         <Divider />
