@@ -16,6 +16,8 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getMPTheme from './getMPTheme';
+import ImageList from './components/ImageList';
+// import { ImageList } from '@mui/material';
 
 interface ToggleCustomThemeProps {
   showCustomTheme: Boolean;
@@ -58,7 +60,7 @@ function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }: ToggleCustomT
 }
 
 export default function MarketingPage() {
-  const [mode, setMode] = React.useState<PaletteMode>('light');
+  const [mode, setMode] = React.useState<PaletteMode>('dark');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const MPTheme = createTheme(getMPTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
@@ -78,7 +80,8 @@ export default function MarketingPage() {
       <Hero />
       <Box sx={{ bgcolor: 'background.default' }}>
         <LogoCollection />
-        <Features />
+        {/* <Features /> */}
+        <ImageList />
         <Divider />
         <Testimonials />
         <Divider />

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
 
-export default function SitemarkIcon() {
+export default function LogoIcon() {
   return (
-    <SvgIcon sx={{ height: 21, width: 100, mr: 2 }}>
+    <SvgIcon sx={{ height: 40, width: 100, mr: 2 }}>
       <svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='100%' viewBox='0 0 1738 692' enable-background='new 0 0 1738 692' xmlSpace='preserve'>
         <path
           fill='#000000'

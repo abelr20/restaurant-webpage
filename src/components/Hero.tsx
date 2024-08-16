@@ -68,12 +68,12 @@ export default function Hero() {
               variant='h1'
               sx={theme => ({
                 fontSize: 'inherit',
-                color: 'primary.main',
+                color: 'success.main',
                 ...theme.applyStyles('dark', {
-                  color: 'primary.light',
+                  color: 'success.light',
                 }),
               })}>
-              New York
+              NY
             </Typography>
           </Typography>
           <Typography
@@ -84,7 +84,7 @@ export default function Hero() {
             }}>
             Authentic Thai Cuisine
           </Typography>
-          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} useFlexGap sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}>
+          {/* <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} useFlexGap sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}>
             <InputLabel htmlFor='email-hero' sx={visuallyHidden}>
               Email
             </InputLabel>
@@ -102,17 +102,17 @@ export default function Hero() {
                 },
               }}
             />
-            <Button variant='contained' color='primary'>
+            <Button variant='contained' color='success'>
               Start now
             </Button>
-          </Stack>
-          <Typography variant='caption' sx={{ textAlign: 'center' }}>
+          </Stack> */}
+          {/* <Typography variant='caption' sx={{ textAlign: 'center' }}>
             By clicking &quot;Start now&quot; you agree to our&nbsp;
             <Link href='#' color='primary'>
               Terms & Conditions
             </Link>
             .
-          </Typography>
+          </Typography> */}
         </Stack>
         <StyledBox id='image' />
       </Container>

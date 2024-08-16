@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from './ToggleColorMode';
 
-import Sitemark from './SitemarkIcon';
+import Logo from './LogoIcon';
 
 interface AppAppBarProps {
   mode: PaletteMode;
@@ -64,7 +64,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             }),
           })}>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-            <Sitemark />
+            <Logo />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button variant='text' color='info' size='small' onClick={() => scrollToSection('features')}>
                 Features
@@ -90,12 +90,12 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               alignItems: 'center',
             }}>
             <ToggleColorMode data-screenshot='toggle-mode' mode={mode} toggleColorMode={toggleColorMode} />
-            <Button color='primary' variant='text' size='small'>
+            {/* <Button color='primary' variant='text' size='small'>
               Sign in
             </Button>
             <Button color='primary' variant='contained' size='small'>
               Sign up
-            </Button>
+            </Button> */}
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
             <IconButton aria-label='Menu button' onClick={toggleDrawer(true)}>
@@ -120,7 +120,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 <MenuItem onClick={() => scrollToSection('highlights')}>Highlights</MenuItem>
                 <MenuItem onClick={() => scrollToSection('pricing')}>Pricing</MenuItem>
                 <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                <MenuItem>
+                {/* <MenuItem>
                   <Button color='primary' variant='contained' fullWidth>
                     Sign up
                   </Button>
@@ -129,7 +129,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   <Button color='primary' variant='outlined' fullWidth>
                     Sign in
                   </Button>
-                </MenuItem>
+                </MenuItem> */}
               </Box>
             </Drawer>
           </Box>
