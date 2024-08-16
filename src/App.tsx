@@ -22,7 +22,11 @@ import Soups from './components/Soups';
 import Salads from './components/Salads';
 import Curry from './components/Curry';
 import Sauteed from './components/Sauteed';
-import Noodle from './components/Noodle';
+import Noodle from './components/Noodles';
+import HouseSpecials from './components/HouseSpecials';
+import Desserts from './components/Desserts';
+import Sides from './components/Sides';
+
 // import { ImageList } from '@mui/material';
 
 interface ToggleCustomThemeProps {
@@ -99,6 +103,12 @@ export default function MarketingPage() {
         <Sauteed />
         <Divider />
         <Noodle />
+        <Divider />
+        <HouseSpecials />
+        <Divider />
+        <Desserts />
+        <Divider />
+        <Sides />
         {/* <Testimonials /> 
         <Divider />
         <Highlights />

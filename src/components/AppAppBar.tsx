@@ -70,7 +70,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             <Logo />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button variant='text' color='info' size='large' onClick={() => scrollToSection('hero')}>
-                Menu
+                Order
               </Button>
               <Button variant='text' color='info' size='large' onClick={() => scrollToSection('appetizers')}>
                 Appetizers
@@ -87,11 +87,17 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               <Button variant='text' color='info' size='large' onClick={() => scrollToSection('sauteed')}>
                 Sauteed
               </Button>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('noodle')}>
-                Noodle
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('noodles')}>
+                Noodles
               </Button>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('faq')} sx={{ minWidth: 0 }}>
-                FAQ
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('housespecials')}>
+                House Specials
+              </Button>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('desserts')}>
+                Desserts
+              </Button>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('sides')}>
+                Sides
               </Button>
             </Box>
           </Box>
@@ -101,9 +107,12 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               gap: 0.5,
               alignItems: 'center',
             }}>
-            <Button color='info' variant='text' size='large' onClick={onlineOrder}>
-              ORDER NOW
+            <Button variant='text' color='info' size='large' onClick={() => scrollToSection('faq')} sx={{ minWidth: 0 }}>
+              FAQ
             </Button>
+            {/* <Button color='info' variant='text' size='large' onClick={onlineOrder}>
+              ORDER NOW
+            </Button> */}
           </Box>
           <Box
             sx={{
@@ -137,11 +146,19 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   </IconButton>
                 </Box>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem onClick={() => scrollToSection('features')}>Features</MenuItem>
-                <MenuItem onClick={() => scrollToSection('testimonials')}>Testimonials</MenuItem>
-                <MenuItem onClick={() => scrollToSection('highlights')}>Highlights</MenuItem>
-                <MenuItem onClick={() => scrollToSection('pricing')}>Pricing</MenuItem>
+                <MenuItem onClick={() => scrollToSection('hero')}>Order</MenuItem>
+                <MenuItem onClick={() => scrollToSection('appetizers')}>Appetizers</MenuItem>
+                <MenuItem onClick={() => scrollToSection('soups')}>Soups</MenuItem>
+                <MenuItem onClick={() => scrollToSection('salads')}>Salads</MenuItem>
+                <MenuItem onClick={() => scrollToSection('curry')}>Curry</MenuItem>
+                <MenuItem onClick={() => scrollToSection('sauteed')}>Sauteed</MenuItem>
+                <MenuItem onClick={() => scrollToSection('noodles')}>Noodles</MenuItem>
+                <MenuItem onClick={() => scrollToSection('housespecials')}>House Specials</MenuItem>
+                <MenuItem onClick={() => scrollToSection('desserts')}>Desserts</MenuItem>
+                <MenuItem onClick={() => scrollToSection('sides')}>Sides</MenuItem>
                 <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
+                <MenuItem onClick={onlineOrder}>ORDER</MenuItem>
+
                 {/* <MenuItem>
                   <Button color='primary' variant='contained' fullWidth>
                     Sign up

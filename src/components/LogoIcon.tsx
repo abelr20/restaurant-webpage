@@ -2,9 +2,13 @@ import * as React from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
 
 export default function LogoIcon() {
+  const goHome = () => {
+    document.location.href = 'http://localhost:5173'; // change to thailoveny.com post deploy
+  };
+
   return (
-    <SvgIcon sx={{ height: 40, width: 100, mr: 2 }}>
-      <svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='100%' viewBox='0 0 1738 692' enable-background='new 0 0 1738 692' xmlSpace='preserve'>
+    <SvgIcon sx={{ height: 38, width: 100, mr: 2 }}>
+      <svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='100%' viewBox='0 0 1738 692' enable-background='new 0 0 1738 692' xmlSpace='preserve' onClick={goHome} style={{ cursor: 'pointer' }}>
         <path
           fill='#000000'
           opacity='1.000000'

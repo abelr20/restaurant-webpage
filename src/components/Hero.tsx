@@ -62,10 +62,11 @@ export default function Hero() {
               textAlign: 'center',
               color: 'text.primary',
               width: { sm: '100%', md: '80%' },
+              pt: 3,
             }}>
-            Authentic Thai Cuisine
+            Order Online for Take Out or Delivery
           </Typography>
-          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} useFlexGap sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}>
+          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} useFlexGap sx={{ width: { xs: '100%', sm: 'auto' } }}>
             <Button variant='contained' size='large' color='success' onClick={() => (document.location.href = 'https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=e034bbd0-d0f6-4d94-ba06-6eabcfa70f6d')}>
               ORDER NOW
             </Button>

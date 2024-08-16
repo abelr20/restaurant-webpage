@@ -59,14 +59,14 @@ const items = [
   },
 ];
 
-export default function Noodle() {
+export default function Noodles() {
   const onlineOrder = () => {
     document.location.href = 'https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=e034bbd0-d0f6-4d94-ba06-6eabcfa70f6d';
   };
 
   return (
     <Box
-      id='noodle'
+      id='noodles'
       sx={{
         pt: 2,
         pb: 4,
@@ -88,7 +88,7 @@ export default function Noodle() {
             textAlign: 'center',
           }}>
           <Typography component='h2' variant='h4'>
-            Noodle
+            Noodles
           </Typography>
           <Typography component='h2' variant='body1'>
             Choice of Protein: [ Veggie, Tofu, Chicken, Pork +$1, Beef +$1, Shrimp +3$, Calamari +$6, Salmon +$6, Duck +$16 ]

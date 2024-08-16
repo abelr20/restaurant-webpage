@@ -23,7 +23,7 @@ export default function OurMenu() {
           pt: 5,
         }}>
         <Typography component='h2' variant='h2'>
-          Our Menu
+          Menu
         </Typography>
       </Container>
     </Box>
