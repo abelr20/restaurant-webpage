@@ -16,8 +16,13 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getMPTheme from './getMPTheme';
-import Menu from './components/Appetizers';
 import OurMenu from './components/OurMenu';
+import Appetizers from './components/Appetizers';
+import Soups from './components/Soups';
+import Salads from './components/Salads';
+import Curry from './components/Curry';
+import Sauteed from './components/Sauteed';
+import Noodle from './components/Noodle';
 // import { ImageList } from '@mui/material';
 
 interface ToggleCustomThemeProps {
@@ -83,13 +88,22 @@ export default function MarketingPage() {
         {/* <LogoCollection /> */}
         {/* <Features /> */}
         <OurMenu />
-        <Menu />
+        <Appetizers />
         <Divider />
-        <Testimonials />
+        <Soups />
+        <Divider />
+        <Salads />
+        <Divider />
+        <Curry />
+        <Divider />
+        <Sauteed />
+        <Divider />
+        <Noodle />
+        {/* <Testimonials /> 
         <Divider />
         <Highlights />
         <Divider />
-        <Pricing />
+        <Pricing /> */}
         <Divider />
         <FAQ />
         <Divider />

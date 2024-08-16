@@ -149,7 +149,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
     background: {
       default: 'hsl(0, 0%, 100%)',
       paper: gray[100],
-      ...(mode === 'dark' && { default: 'hsl(220, 30%, 3%)', paper: gray[900] }),
+      ...(mode === 'dark' && { default: 'hsl(220, 30%, 7%)', paper: gray[900] }), // main background color
     },
     text: {
       primary: gray[800],

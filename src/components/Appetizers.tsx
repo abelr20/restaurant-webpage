@@ -13,25 +13,73 @@ const items = [
     title: 'A1. Thai Love Shrimp',
     description: 'Crispy fried shrimp. Served with spicy cream sauce.',
     image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
-    price: '$12.99',
+    price: '$12.00',
   },
   {
     title: 'A2. Calamari',
-    description: 'Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce.',
+    description: 'Fried tempura calamari. Served with sweet chili sauce.',
     image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
-    price: '$10.99',
+    price: '$15.00',
   },
   {
-    title: 'A3. Thai Love Shrimp',
-    description: 'Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce.',
+    title: 'A3. Shrimp Blanket',
+    description: 'Fried shrimp wrapped in rice paper. Served with sweet chili sauce.',
     image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
-    price: '$11.99',
+    price: '$13.00',
   },
   {
-    title: 'A1. Thai Love Shrimp',
-    description: 'Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce. Crispy fried shrimp. Served with spicy cream sauce.',
+    title: 'A4. Coconut Shrimp',
+    description: 'Crispy coconut-coated shrimp. Served with sweet chili sauce.',
     image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
-    price: '$12.49',
+    price: '$13.00',
+  },
+  {
+    title: 'A5. Egg Roll',
+    description: 'Wrapped and deep-fried ground pork, shrimp, mixed veggies, and glass noodles. Served with carrot sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$10.00',
+  },
+  {
+    title: 'A6. Veggie Roll',
+    description: 'Wrapped and deep-fried mixed veggies and glass noodles. Served with sweet chili sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$9.00',
+  },
+  {
+    title: 'A7. Fresh Summer Roll',
+    description: 'Wrapped shrimp, carrots, bean sprouts, cucumber, rice noodles, and lettuce. Served with sweet chili sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$12.00',
+  },
+  {
+    title: 'A8. Tofu Tod',
+    description: 'Fried tofu. Served with sweet chili sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$8.00',
+  },
+  {
+    title: 'A9. Chicken Satay',
+    description: 'Curry marinated grilled chicken. Served with peanut sauce and cucumber salad.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$12.00',
+  },
+  {
+    title: 'A10. Thai Chicken Wings',
+    description: 'Garlic-marinated Thai-style chicken. Served with sweet Thai chili sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$10.00',
+  },
+  {
+    title: 'A11. Shrimp Chips',
+    description: 'Fried shrimp-flavored rice crackers. Served with peanut sauce.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$5.00',
+  },
+  {
+    title: 'A12. Mussels Prig Pow',
+    description: '(Minimum Spice Level MILD) Steamed mussels with roasted Thai chili sauce and Thai basil.',
+    image: 'https://img1.wsimg.com/isteam/ip/e6a149f9-5ae9-46a1-bc1e-2c17fef84928/a1%20Thai%20Love%20Shrimp.JPG/:/rs=w:720,h:541,cg=true,m/cr=w:720,h:541',
+    price: '$15.00',
   },
 ];
 
@@ -44,8 +92,8 @@ export default function Appetizers() {
     <Box
       id='appetizers'
       sx={{
-        pt: { xs: 4, sm: 4 },
-        pb: { xs: 8, sm: 16 },
+        pt: 4,
+        pb: 4,
       }}>
       <Container
         sx={{
@@ -69,10 +117,10 @@ export default function Appetizers() {
         <Grid container spacing={2.5} justifyContent='center' columns={{ xs: 4, sm: 8, md: 12 }}>
           {items.map((item, index) => (
             <Grid size={4} key={index} display='flex' justifyContent='center'>
-              <Card sx={{ maxWidth: 400, border: '1px solid hsla(220, 25%, 25%, .3)' }} onClick={onlineOrder}>
-                <CardActionArea>
+              <Card sx={{ maxWidth: 400, border: '1px solid hsla(220, 25%, 25%, .3)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }} onClick={onlineOrder}>
+                <CardActionArea sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <CardMedia component='img' height='220' image={item.image} alt={item.title} />
-                  <CardContent>
+                  <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant='h5' component='div'>
                       {item.title}
                     </Typography>
