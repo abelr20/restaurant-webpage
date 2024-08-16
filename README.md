@@ -9,7 +9,7 @@
     <img src="images/Logo.png" alt="Logo" height="100">
   </a>
 
-  <h3 align="center">Thai Love NY WebPage</h3>
+  <h3 align="center">Thai Love NY Webpage</h3>
 
   <p align="center">
     Under Construction
@@ -22,11 +22,11 @@
     <!-- BADGES -->
   <p align="center">
     <!-- STARS -->
-    <a href="https://github.com/abelr20/restaurant-webpage/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/oslabs-beta/SkyScraper?label=Stars&logo=github"></a>
+    <a href="https://github.com/abelr20/restaurant-webpage/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/abelr20/restaurant-webpage?label=Stars&logo=github"></a>
     <!-- FORKS -->
-    <a href="https://github.com/abelr20/restaurant-webpage/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/oslabs-beta/SkyScraper?label=Forks&logo=github"></a>
+    <a href="https://github.com/abelr20/restaurant-webpage/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/abelr20/restaurant-webpage?label=Forks&logo=github"></a>
     <!-- LICENSE -->
-    <a href="https://github.com/abelr20/restaurant-webpage/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/oslabs-beta/SkyScraper"></a>
+    <a href="https://github.com/abelr20/restaurant-webpage/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/abelr20/restaurant-webpage"></a>
     <!-- CONTRIBUTIONS -->
     <a href="https://github.com/abelr20/restaurant-webpage/blob/master/README.md"><img alt="Contributions" src="https://img.shields.io/badge/contributors-welcome-brightgreen"></a>
   </p>
@@ -55,17 +55,15 @@
   <img width="900" src="images/Logo.png">
 </p>
 
-Thai Love NY Website
+New Thai Love NY main website (Under Construction)
 
 ### Built With
 
 - [<img style="height: 1em;" src="images/TS.png">](https://www.typescriptlang.org/) [TypeScript](https://www.typescriptlang.org/)
 - [<img style="height: 1em;" src="images/React.png">](https://reactjs.org/) [React](https://reactjs.org/)
-- [<img style="height: 1em;" src="images/Redux.png">](https://redux-toolkit.js.org/) [Redux](https://redux-toolkit.js.org/)
 - [<img style="height: 1em;" src="images/Nodejs.png">](https://nodejs.org/en) [Node.js](https://nodejs.org/en)
 - [<img style="height: 1em;" src="images/Express.png">](https://expressjs.com/) [Express](https://expressjs.com/)
-- [<img style="height: 1em;" src="images/Chartjs.png">](https://www.chartjs.org/) [Chart.js](https://www.chartjs.org/)
-- [<img style="height: 1em;" src="images/Webpack.png">](https://webpack.js.org/) [Webpack](https://webpack.js.org/)
+- [<img style="height: 1em;" src="images/Vite.png">](https://webpack.js.org/) [Vite](https://webpack.js.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

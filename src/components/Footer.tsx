@@ -11,18 +11,16 @@ import Typography from '@mui/material/Typography';
 
 import { visuallyHidden } from '@mui/utils';
 
-import FacebookIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
 
-import SitemarkIcon from './LogoIcon';
+import Logo from './LogoIcon';
 
 function Copyright() {
   return (
     <Typography variant='body2' sx={{ color: 'text.secondary', mt: 1 }}>
-      {'Copyright © '}
-      <Link href='https://thailoveny.com/'>Thai Love NY&nbsp;</Link>
-      {new Date().getFullYear()}
+      {`Copyright © ${new Date().getFullYear()} Thai Love NY`}
     </Typography>
   );
 }
@@ -53,14 +51,30 @@ export default function Footer() {
             minWidth: { xs: '100%', sm: '60%' },
           }}>
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <SitemarkIcon />
+            <Logo />
             <Typography variant='body2' gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
-              Join the newsletter
+              Thai Love NY Restaurant
+            </Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}></Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              2822 Lemoyne Ave
+            </Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              Syracuse, NY 13211
             </Typography>
             <Typography variant='body2' sx={{ color: 'text.secondary', mb: 2 }}>
-              Subscribe for weekly updates. No spams ever!
+              (315) 928-5659
             </Typography>
-            <Stack direction='row' spacing={1} useFlexGap>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              Tuesday - Friday: 11am - 8pm
+            </Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              Saturday - Sunday: 4pm - 8pm
+            </Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              Monday: Closed
+            </Typography>
+            {/* <Stack direction='row' spacing={1} useFlexGap>
               <InputLabel htmlFor='email-newsletter' sx={visuallyHidden}>
                 Email
               </InputLabel>
@@ -82,20 +96,20 @@ export default function Footer() {
               <Button variant='contained' color='primary' sx={{ flexShrink: 0 }}>
                 Subscribe
               </Button>
-            </Stack>
+            </Stack> */}
           </Box>
         </Box>
-        <Box
+        {/* <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
             flexDirection: 'column',
             gap: 1,
           }}>
           <Typography variant='body2' sx={{ fontWeight: 'medium' }}>
-            Product
+            Sections
           </Typography>
           <Link color='text.secondary' variant='body2' href='#'>
-            Features
+            Menu
           </Link>
           <Link color='text.secondary' variant='body2' href='#'>
             Testimonials
@@ -109,7 +123,7 @@ export default function Footer() {
           <Link color='text.secondary' variant='body2' href='#'>
             FAQs
           </Link>
-        </Box>
+        </Box> */}
         <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
@@ -120,7 +134,7 @@ export default function Footer() {
             Company
           </Typography>
           <Link color='text.secondary' variant='body2' href='#'>
-            About us
+            About Us
           </Link>
           <Link color='text.secondary' variant='body2' href='#'>
             Careers
@@ -159,25 +173,28 @@ export default function Footer() {
           borderColor: 'divider',
         }}>
         <div>
-          <Link color='text.secondary' variant='body2' href='#'>
+          {/* <Link color='text.secondary' variant='body2' href='#'>
             Privacy Policy
           </Link>
           <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>&nbsp;•&nbsp;</Typography>
           <Link color='text.secondary' variant='body2' href='#'>
             Terms of Service
-          </Link>
+          </Link> */}
           <Copyright />
         </div>
         <Stack direction='row' spacing={1} useFlexGap sx={{ justifyContent: 'left', color: 'text.secondary' }}>
-          <IconButton color='inherit' href='https://github.com/abelr20' aria-label='GitHub' sx={{ alignSelf: 'center' }}>
-            <FacebookIcon />
-          </IconButton>
-          <IconButton color='inherit' href='https://x.com/MaterialUI' aria-label='X' sx={{ alignSelf: 'center' }}>
-            <TwitterIcon />
-          </IconButton>
+          Built by Abel
+        </Stack>
+        <Stack direction='row' spacing={1} useFlexGap sx={{ justifyContent: 'left', color: 'text.secondary' }}>
           <IconButton color='inherit' href='https://www.linkedin.com/in/abel-ratanaphan/' aria-label='LinkedIn' sx={{ alignSelf: 'center' }}>
             <LinkedInIcon />
           </IconButton>
+          {/* <IconButton color='inherit' href='https://x.com/MaterialUI' aria-label='X' sx={{ alignSelf: 'center' }}>
+            <TwitterIcon />
+          </IconButton> */}
+          {/* <IconButton color='inherit' href='https://github.com/abelr20' aria-label='GitHub' sx={{ alignSelf: 'center' }}>
+            <GitHubIcon />
+          </IconButton> */}
         </Stack>
       </Box>
     </Container>

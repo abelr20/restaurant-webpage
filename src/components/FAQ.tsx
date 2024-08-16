@@ -20,7 +20,7 @@ export default function FAQ() {
     <Container
       id='faq'
       sx={{
-        pt: { xs: 4, sm: 12 },
+        pt: 4,
         pb: { xs: 8, sm: 16 },
         position: 'relative',
         display: 'flex',
@@ -34,7 +34,7 @@ export default function FAQ() {
         sx={{
           color: 'text.primary',
           width: { sm: '100%', md: '60%' },
-          textAlign: { sm: 'left', md: 'center' },
+          textAlign: 'center',
         }}>
         Frequently asked questions
       </Typography>
@@ -48,8 +48,8 @@ export default function FAQ() {
           <AccordionDetails>
             <Typography variant='body2' gutterBottom sx={{ maxWidth: { sm: '100%', md: '70%' } }}>
               You can reach our customer support team by emailing
-              <Link> support@email.com </Link>
-              or calling our toll-free number. We&apos;re here to assist you promptly.
+              <Link> thailoveny@yahoo.com </Link>
+              or calling (315) 928-5659. We&apos;re here to assist you promptly.
             </Typography>
           </AccordionDetails>
         </Accordion>

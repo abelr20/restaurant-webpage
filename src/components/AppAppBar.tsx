@@ -12,7 +12,6 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from './ToggleColorMode';
-
 import Logo from './LogoIcon';
 
 interface AppAppBarProps {
@@ -55,7 +54,7 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
             alignItems: 'center',
             justifyContent: 'space-between',
             flexShrink: 0,
-            borderRadius: '10px',
+            borderRadius: '12px',
             backdropFilter: 'blur(24px)',
             maxHeight: 40,
             border: '1px solid',
@@ -70,17 +69,26 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Logo />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('menu')}>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('hero')}>
                 Menu
               </Button>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('testimonials')}>
-                Testimonials
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('appetizers')}>
+                Appetizers
               </Button>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('highlights')}>
-                Highlights
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('soups')}>
+                Soups
               </Button>
-              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('pricing')}>
-                Pricing
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('salads')}>
+                Salads
+              </Button>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('curry')}>
+                Curry
+              </Button>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('sauteed')}>
+                Sauteed
+              </Button>
+              <Button variant='text' color='info' size='large' onClick={() => scrollToSection('noodle')}>
+                Noodle
               </Button>
               <Button variant='text' color='info' size='large' onClick={() => scrollToSection('faq')} sx={{ minWidth: 0 }}>
                 FAQ
@@ -93,10 +101,20 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               gap: 0.5,
               alignItems: 'center',
             }}>
-            <ToggleColorMode data-screenshot='toggle-mode' mode={mode} toggleColorMode={toggleColorMode} />
-            <Button color='primary' variant='text' size='large' onClick={onlineOrder}>
-              Order
+            <Button color='info' variant='text' size='large' onClick={onlineOrder}>
+              ORDER NOW
             </Button>
+          </Box>
+          <Box
+            sx={{
+              display: { xs: 'none', md: 'flex' },
+              gap: 0.5,
+              alignItems: 'center',
+            }}>
+            <ToggleColorMode data-screenshot='toggle-mode' mode={mode} toggleColorMode={toggleColorMode} />
+            {/* <Button color='info' variant='text' size='large' onClick={onlineOrder}>
+              Order
+            </Button> */}
             {/* <Button color='primary' variant='contained' size='small'>
               Sign up
             </Button> */}

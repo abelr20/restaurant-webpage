@@ -2,52 +2,41 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import InputLabel from '@mui/material/InputLabel';
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-
-import { visuallyHidden } from '@mui/utils';
-import { styled } from '@mui/material/styles';
-
-// const StyledBox = styled('div')(({ theme }) => ({
-//   alignSelf: 'center',
-//   width: '100%',
-//   height: 400,
-//   marginTop: theme.spacing(8),
-//   borderRadius: theme.shape.borderRadius,
-//   outline: '1px solid',
-//   boxShadow: '0 0 12px 8px hsla(220, 25%, 80%, 0.2)',
-//   backgroundImage: `url(${'/static/images/templates/templates-images/hero-light.png'})`,
-//   outlineColor: 'hsla(220, 25%, 80%, 0.5)',
-//   backgroundSize: 'cover',
-//   [theme.breakpoints.up('sm')]: {
-//     marginTop: theme.spacing(10),
-//     height: 700,
-//   },
-//   ...theme.applyStyles('dark', {
-//     boxShadow: '0 0 24px 12px hsla(210, 100%, 25%, 0.2)',
-//     backgroundImage: `url(${'/static/images/templates/templates-images/hero-dark.png'})`,
-//     outlineColor: 'hsla(210, 100%, 80%, 0.1)',
-//   }),
-// }));
 
 export default function Hero() {
   return (
     <Box
       id='hero'
-      sx={theme => ({
+      sx={{
+        position: 'relative',
         width: '100%',
-        height: '300px',
-        backgroundRepeat: 'no-repeat',
-        backgroundImage: 'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
-        ...theme.applyStyles('dark', {
-          backgroundImage: 'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        }),
-      })}>
+        paddingBottom: '10px',
+        overflow: 'hidden', // Ensures the video doesn't overflow the box
+      }}>
+      <video
+        autoPlay
+        muted
+        loop
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: 1, // Behind the content
+        }}>
+        <source src='src/assets/cooking.mp4' type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>
+
       <Container
         sx={{
+          position: 'relative',
+          zIndex: 2, // Ensures content is above the video
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -61,62 +50,27 @@ export default function Hero() {
               display: 'flex',
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
               fontSize: 'clamp(3rem, 10vw, 3.5rem)',
             }}>
-            Thai Love NY Restaurant
-            {/* <Typography
-              component='span'
-              variant='h1'
-              sx={theme => ({
-                fontSize: 'inherit',
-                color: 'success.main',
-                ...theme.applyStyles('dark', {
-                  color: 'success.light',
-                }),
-              })}>
-              NY
-            </Typography> */}
+            Thai Love NY
           </Typography>
           <Typography
             variant='h5'
             sx={{
               textAlign: 'center',
-              color: 'text.secondary',
+              color: 'text.primary',
               width: { sm: '100%', md: '80%' },
             }}>
             Authentic Thai Cuisine
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1} useFlexGap sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}>
-            {/* <InputLabel htmlFor='email-hero' sx={visuallyHidden}>
-              Email
-            </InputLabel>
-            <TextField
-              id='email-hero'
-              hiddenLabel
-              size='small'
-              variant='outlined'
-              aria-label='Enter your email address'
-              placeholder='Your email address'
-              slotProps={{
-                htmlInput: {
-                  autoComplete: 'off',
-                  'aria-label': 'Enter your email address',
-                },
-              }}
-            /> */}
             <Button variant='contained' size='large' color='success' onClick={() => (document.location.href = 'https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=e034bbd0-d0f6-4d94-ba06-6eabcfa70f6d')}>
-              Order Online
+              ORDER NOW
             </Button>
           </Stack>
-          {/* <Typography variant='caption' sx={{ textAlign: 'center' }}>
-            By clicking &quot;Start now&quot; you agree to our&nbsp;
-            <Link href='#' color='primary'>
-              Terms & Conditions
-            </Link>
-            .
-          </Typography> */}
         </Stack>
-        {/* <StyledBox id='image' /> */}
       </Container>
     </Box>
   );
