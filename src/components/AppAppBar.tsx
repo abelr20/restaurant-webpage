@@ -157,8 +157,6 @@ export default function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                 <MenuItem onClick={() => scrollToSection('desserts')}>Desserts</MenuItem>
                 <MenuItem onClick={() => scrollToSection('sides')}>Sides</MenuItem>
                 <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                <MenuItem onClick={onlineOrder}>ORDER</MenuItem>
-
                 {/* <MenuItem>
                   <Button color='primary' variant='contained' fullWidth>
                     Sign up

@@ -13,7 +13,7 @@ import { visuallyHidden } from '@mui/utils';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
+import XIcon from '@mui/icons-material/X';
 
 import Logo from './LogoIcon';
 
@@ -167,7 +167,7 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          pt: { xs: 4, sm: 8 },
+          pt: 2,
           width: '100%',
           borderTop: '1px solid',
           borderColor: 'divider',
@@ -190,7 +190,7 @@ export default function Footer() {
             <LinkedInIcon />
           </IconButton>
           {/* <IconButton color='inherit' href='https://x.com/MaterialUI' aria-label='X' sx={{ alignSelf: 'center' }}>
-            <TwitterIcon />
+            <XIcon />
           </IconButton> */}
           {/* <IconButton color='inherit' href='https://github.com/abelr20' aria-label='GitHub' sx={{ alignSelf: 'center' }}>
             <GitHubIcon />

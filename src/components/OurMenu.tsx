@@ -5,11 +5,7 @@ import Container from '@mui/material/Container';
 
 export default function OurMenu() {
   return (
-    <Box
-      id='ourmenu'
-      sx={{
-        pt: { xs: 5, sm: 10 },
-      }}>
+    <Box id='ourmenu'>
       <Container
         sx={{
           position: 'relative',
